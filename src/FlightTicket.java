@@ -48,16 +48,18 @@ public class FlightTicket {
                     System.out.println("İndirimsiz bilet ücreti:" + price + "TL");
                     totalDiscount = (price * discountedRate12);
                     discountedPrice = price - totalDiscount;
-                    System.out.println("İndirim tutari:" + totalDiscount + "TL");
                     System.out.println("İndirim orani: %" + discountedRate12);
+                    System.out.println("İndirim tutari:" + totalDiscount + "TL");
+
                     System.out.println("Ödenecek tutar :" + discountedPrice + "TL");
                 } else if (age > 12 && age < 24) {
                     price = (range * perKm);
                     System.out.println("İndirimsiz bilet ücreti:" + price + "TL");
                     totalDiscount = (price * discountedRate12_24);
                     discountedPrice = price - totalDiscount;
-                    System.out.println("İndirim tutari:" + totalDiscount + "TL");
                     System.out.println("Genc Yas İndirim orani: %" + discountedRate12_24);
+                    System.out.println("İndirim tutari:" + totalDiscount + "TL");
+
                     System.out.println("Ödenecek tutar :" + discountedPrice + "TL");
                 } else if (age > 24 && age < 65) {
                     price = (range * perKm);
@@ -67,8 +69,8 @@ public class FlightTicket {
                     System.out.println("İndirimsiz bilet ücreti:" + price + "TL");
                     totalDiscount = (price * discountedRate65);
                     discountedPrice = price - totalDiscount;
-                    System.out.println("İndirim tutari:" + totalDiscount + "TL");
                     System.out.println("65 yas İndirim orani: %" + discountedRate65);
+                    System.out.println("İndirim tutari:" + totalDiscount + "TL");
                     System.out.println("Ödenecek tutar :" + discountedPrice + "TL");
                 } break;
 
@@ -79,8 +81,9 @@ public class FlightTicket {
                     totalDiscount = (price * discountedRate12);
                     specialDiscount = totalDiscount - (totalDiscount * roundTripDiscountRate);
                     discountedPrice = price - specialDiscount;
-                    System.out.println("İndirim tutari:" + specialDiscount + "TL");
                     System.out.println("12 Yas İndirim orani: %" + discountedRate12);
+                    System.out.println("Bilet tipi indirim oranı: %"+roundTripDiscountRate);
+                    System.out.println("İndirim tutari:" + specialDiscount + "TL");
                     System.out.println("Ödenecek tutar :" + discountedPrice + "TL");
 
                 } else if (age > 12 && age < 24) {
@@ -89,14 +92,16 @@ public class FlightTicket {
                     totalDiscount = (price * discountedRate12_24);
                     specialDiscount = totalDiscount - (totalDiscount * roundTripDiscountRate);
                     discountedPrice = price - specialDiscount;
-                    System.out.println("İndirim tutari:" + specialDiscount + "TL");
                     System.out.println("Genc Yas İndirim orani: %" + discountedRate12_24);
+                    System.out.println("Bilet tipi indirim oranı: %"+roundTripDiscountRate);
+                    System.out.println("İndirim tutari:" + specialDiscount + "TL");
                     System.out.println("Ödenecek tutar :" + discountedPrice + "TL");
 
                 } else if ((age > 24 && age < 65)) {
                     price = (range * perKm);
                     System.out.println("İndirimsiz bilet ücreti:" + price + "TL");
                     discountedPrice = price - (price * roundTripDiscountRate);
+                    System.out.println("Bilet tipi indirim oranı: %"+roundTripDiscountRate);
                     System.out.println("Ödenecek Tutar :" + discountedPrice + "TL");
 
                 } else if (age < 65) {
@@ -105,8 +110,9 @@ public class FlightTicket {
                     totalDiscount = (price * discountedRate65);
                     specialDiscount = totalDiscount - (totalDiscount * roundTripDiscountRate);
                     discountedPrice = price - specialDiscount;
-                    System.out.println("İndirim tutari:" + specialDiscount + "TL");
                     System.out.println("65 Yas İndirim orani: %" + discountedRate65);
+                    System.out.println("Bilet tipi indirim oranı: %"+roundTripDiscountRate);
+                    System.out.println("İndirim tutari:" + specialDiscount + "TL");
                     System.out.println("Ödenecek tutar :" + discountedPrice + "TL");
                 }
                 break ;
