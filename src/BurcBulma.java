@@ -9,7 +9,8 @@ public class BurcBulma {
             int ay = input.nextInt();
             System.out.print("Doğum gününüzü giriniz: ");
             int gun = input.nextInt();
-
+            
+            // burada yanlış gün-ay girildiyse programın başa dönüp tekrar calısmasını sağladım.
             if (ay < 1 || ay > 12 || gun < 1 || gun > 31) {
                 System.out.println("Geçersiz ay veya gün girildi, tekrar deneyin.");
                 continue;
