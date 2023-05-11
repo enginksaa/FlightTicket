@@ -1,9 +1,9 @@
 import java.util.Scanner;
 public class AdviceEvent {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner userEntry = new Scanner(System.in);
         System.out.print("Lütfen sıcaklık değerini girin: ");
-        int heat = scanner.nextInt();
+        int heat = userEntry.nextInt();
 
         if (heat < 5) {
             System.out.println("Hava çok soğuk, yani kayak için mükemmel bir gün.");
