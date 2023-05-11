@@ -14,11 +14,5 @@ public class AdviceEvent {
         } else {
             System.out.println("Hava sıcak, herkes havuza serinleme zamanı.");
         }
-
-
-
-
-
-
     }
 }
