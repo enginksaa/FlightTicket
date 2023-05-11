@@ -51,4 +51,5 @@ public class ChineseZodiacFinder {
 
         System.out.println("Çin Zodyağı Burcunuz: " + zodyakBurcu);
     }
+    
 }
